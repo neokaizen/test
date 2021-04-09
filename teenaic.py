@@ -1,36 +1,59 @@
-def pointsystem():
-    points = 0
-    cycle = 0
-    items = input(" There are items scattered on the beach. You see plastic bottles, glass and paper. Pick up 20 points worth of thrash. ",
-                  "",
-                  " You can only pick up 5 items' ",
-                  " Which one do you want to pick up? ",
-                  "a) Plastic bottles ", " b) Glass ", " or ", " c) Paper ")
-    while points < 20 and cycle < 5:
-        if items == a:
-            points = points + 5
-        elif items == b:
-            points = points + 3
-        elif items == c:
-            points = points + 1
+def option():
+    score = 10
+    Error = False
 
-return points
 
-def redeemable():
-    if points >= 50:
+    for x in range(1, 6):
+Expand
+Climate_action.txt
+2 KB
+﻿
+def option():
+    score = 10
+    Error = False
+
+
+    for x in range(1, 6):
+        
+        item = input(" There are items scattered on the beach. You see plastic bottles, glass and paper. Pick up 20 points worth of thrash. You can only pick up 5 items. Which one do you want to pick up? "
+                      " a) Plastic bottles "
+                      " b) Glass "
+                      " c) Paper: ")
+        while Error == True:
+            if item == b:
+                score = score + 3
+            elif item == c:
+                score = score + 1
+            elif item == a:
+                score = score + 5
+            else:
+                print(" Error ")
+                Error = True
+
+
+    return score
+
+
+def redeemable(score):
+
+    if score >= 50:
         print(" You have more than enough to redeem a BruToken ")
         print(" You have redeemed the token ")
-    elif points < 50:
-        print(" You do not have enough points to claim a toke. Please do more mission or activities to earn enough points ")
-
+    elif score < 50:
+        print(" You do not have enough points to claim a token. Please do more mission or activities to earn enough points ")
+        
+    
 
 def main():
-    points = pointsystem()
-    print(" You have a total of: ", points)
-    boolean = input(" Do you wish to redeem it? (yes/no) ")
-    if boolean = yes:
-        redeemable()
-    elif:
-        print(" Thank you for playing the game ")
+    score = 10
+    Player = input(" What is your name? ")
+    print(" Hello, ", Player, " welcome to BruGreen, let's get started" )
+    print("")
+    Answer = option()
+    print(" You have a total points of: ", Answer)
+    Final = redeemable(score)
     
-    /// hahha tested here :) 
+    
+    
+Climate_action.txt
+2 KB
